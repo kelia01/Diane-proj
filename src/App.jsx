@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import AdminDashboard from './components/AdminDashboard';
-import Login from './components/Login';
-import Signup from './components/Signup';
+import AdminDashboard from './components/AdminDashboard.jsx';
+import Login from './components/Login.jsx';
+import Signup from './components/Signup.jsx';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

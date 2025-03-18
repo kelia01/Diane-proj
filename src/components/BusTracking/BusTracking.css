@@ -1,0 +1,35 @@
+.bus-tracking-container {
+    margin: 20px 0;
+}
+
+.bus-tracking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.bus-tracking-table th, .bus-tracking-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.bus-tracking-table th {
+    background-color: #f4f4f4;
+}
+
+.bus-tracking-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.bus-tracking-table .full {
+    background-color: #ffcccc; /* Light red for full buses */
+}
+
+.bus-tracking-table .on-time {
+    color: green;
+}
+
+.bus-tracking-table .delayed {
+    color: red;
+}

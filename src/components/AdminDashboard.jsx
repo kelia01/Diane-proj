@@ -1,4 +1,6 @@
 import React from 'react';
-import BusTracking from './BusTracking';
-import UserManagement from './User Management';
-import PaymentManagement from '/.PaymentManagement'
+import BusTracking from './BusTracking/BusTracking.jsx';
+import UserManagement from './UserManagement.jsx';
+import PaymentManagement from './PaymentManagement.jsx'
+
+export default AdminDashboard;
