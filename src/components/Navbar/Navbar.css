@@ -1,0 +1,45 @@
+/* Navbar Container */
+.navbar {
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  /* Search Box */
+  .search-box {
+    display: flex;
+    align-items: center;
+    background: #f3f4f6;
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+  
+  .search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-left: 8px;
+  }
+  
+  /* Icons */
+  .nav-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .icon {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    color: #1e293b;
+  }
+  

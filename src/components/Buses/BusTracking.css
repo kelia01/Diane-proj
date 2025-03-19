@@ -1,0 +1,397 @@
+/* Base Layout */
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f7fb;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.dashboard-main {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+/* Card Styles */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+.bus-management-card {
+  padding: 24px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+/* Search and Button */
+.header-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  padding: 8px 16px 8px 36px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  width: 240px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4285f4;
+  box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a0aec0;
+}
+
+.add-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #3367d6;
+}
+
+/* Table Styles */
+.table-container {
+  overflow-x: auto;
+}
+
+.buses-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.buses-table th {
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #718096;
+  background-color: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.buses-table td {
+  padding: 16px;
+  font-size: 14px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #4a5568;
+}
+
+.buses-table tr:hover {
+  background-color: #f8fafc;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-badge.active {
+  background-color: #e6f4ea;
+  color: #1e7e34;
+}
+
+.status-badge.inactive {
+  background-color: #feecea;
+  color: #d61f1f;
+}
+
+.last-updated {
+  color: #a0aec0;
+}
+
+.action-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.action-icons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.edit-btn {
+  color: #4285f4;
+}
+
+.edit-btn:hover {
+  color: #3367d6;
+}
+
+.delete-btn {
+  color: #ea4335;
+}
+
+.delete-btn:hover {
+  color: #c62828;
+}
+
+/* Dashboard Cards */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 992px) {
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.overview-card, .activity-card {
+  padding: 24px 16px;
+}
+
+/* Donut Chart */
+.chart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+}
+
+.donut-chart {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+
+.donut-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.donut-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+}
+
+.donut-label {
+  font-size: 12px;
+  color: #718096;
+}
+
+.donut-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.donut-background {
+  fill: none;
+  stroke: #f1f5f9;
+  stroke-width: 10;
+}
+
+.donut-segment {
+  fill: none;
+  stroke: #4285f4;
+  stroke-width: 10;
+  transition: stroke-dashoffset 0.5s;
+}
+
+/* Activity List */
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #f1f5f9;
+  border-radius: 8px;
+}
+
+.activity-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #e8f0fe;
+  border-radius: 8px;
+  color: #4285f4;
+  margin-right: 16px;
+}
+
+.activity-details {
+  flex: 1;
+}
+
+.activity-route {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.activity-date {
+  font-size: 12px;
+  color: #718096;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  max-width: 500px;
+  padding: 24px;
+}
+
+.modal-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+/* Form */
+.bus-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.form-group input,
+.form-group select {
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #4285f4;
+  box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.modal-buttons button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cancel-btn {
+  background-color: white;
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+}
+
+.cancel-btn:hover {
+  background-color: #f8fafc;
+}
+
+.submit-btn {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+}
+
+.submit-btn:hover {
+  background-color: #3367d6;
+}
