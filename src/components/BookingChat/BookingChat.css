@@ -1,0 +1,245 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb; /* Light background */
+    color: #4b5563; /* Default text color */
+}
+
+/* Utility classes */
+.text-primary {
+    color: #dc2626; /* Primary red color */
+}
+
+.bg-primary {
+    background-color: #dc2626; /* Primary red color */
+}
+
+.text-neutral-50 {
+    color: #f9fafb; /* Light text for dark background */
+}
+
+.text-neutral-600 {
+    color: #4b5563; /* Darker text for readability */
+}
+
+.text-neutral-700 {
+    color: #374151; /* Darker text */
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+/* Container Styles */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.space-y-4 {
+    margin-bottom: 16px;
+}
+
+.space-y-10 {
+    margin-bottom: 40px;
+}
+
+.pt-11 {
+    padding-top: 44px;
+}
+
+.pb-16 {
+    padding-bottom: 64px;
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 2px solid #e5e7eb; /* Light gray border */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h1 {
+    font-size: 1.5rem;
+    color: #374151;
+}
+
+.card-body {
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.button {
+    padding: 12px 24px;
+    background-color: #dc2626; /* Primary color */
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background-color: #b91c1c; /* Darker shade of red */
+    border: none;
+}
+
+.button:focus {
+    outline: none;
+}
+
+/* Layout Styles */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.col-span-3 {
+    grid-column: span 3 / span 3;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.z-30 {
+    z-index: 30;
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+/* Flexbox Helpers */
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap-x-2 {
+    gap: 8px;
+}
+
+.gap-x-4 {
+    gap: 16px;
+}
+
+/* Input Styling */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+.input-field:focus {
+    outline-color: #dc2626;
+}
+
+/* QR Code */
+.qr-code-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Ticket Information Styles */
+.ticket-card {
+    padding: 20px;
+    border: 2px solid #e5e7eb;
+    border-radius: 0.75rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-card .header {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket-card .header h1 {
+    font-size: 1.25rem;
+    color: #374151;
+}
+
+.ticket-card .price {
+    font-size: 1.5rem;
+    color: #dc2626; /* Primary red color */
+    font-weight: bold;
+}
+
+/* Icons */
+.icon {
+    width: 16px;
+    height: 16px;
+    color: #dc2626; /* Primary red color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    .text-xl {
+        font-size: 1rem;
+    }
+}

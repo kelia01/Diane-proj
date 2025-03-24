@@ -1,0 +1,74 @@
+/* Container */
+.filter-container {
+    width: 100%;
+}
+
+/* Headings */
+.filter-title {
+    font-size: 1.25rem; /* text-xl */
+    color: #374151; /* text-neutral-700 */
+    font-weight: 600; /* font-semibold */
+}
+
+.filter-box {
+    width: 100%;
+    border: 1px solid #D1D5DB; /* border-neutral-300 */
+    border-radius: 12px; /* rounded-xl */
+    padding: 1rem; /* p-4 */
+}
+
+/* Subtitle */
+.filter-subtitle {
+    font-size: 1.125rem; /* text-lg */
+    color: #D1D5DB; /* text-neutral-300 */
+    font-weight: 500; /* font-medium */
+}
+
+/* Spacing */
+.filter-space-y-1 > *:not(:first-child) {
+    margin-top: 0.25rem; /* space-y-1 */
+}
+
+.filter-space-y-3 > *:not(:first-child) {
+    margin-top: 0.75rem; /* space-y-3 */
+}
+
+.filter-space-y-2-5 > *:not(:first-child) {
+    margin-top: 0.625rem; /* space-y-2.5 */
+}
+
+/* Checkbox Group */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* gap-2 */
+}
+
+/* Checkboxes */
+.filter-checkbox {
+    width: 14px; /* h-3.5, w-3.5 */
+    height: 14px;
+    border: 1px solid #D1D5DB; /* border-neutral-300 */
+    cursor: pointer; /* cursor-pointer */
+}
+
+/* Labels */
+.filter-label {
+    font-size: 0.875rem; /* text-sm */
+    color: #4B5563; /* text-neutral-600 */
+    font-weight: 400; /* font-normal */
+    cursor: pointer; /* cursor-pointer */
+}
+
+/* Checkbox Labels Number */
+.filter-label span {
+    font-size: 1.25rem; /* text-xl */
+    color: #4B5563; /* text-neutral-600 */
+}
+
+/* Flex container for checkboxes */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* gap-2 */
+}

@@ -1,0 +1,8 @@
+.search-result-container {
+    width: 100%;
+    padding-top: 2.75rem; /* Equivalent to pt-11 */
+}
+
+.search-content {
+    margin-bottom: 1.5rem; /* Equivalent to space-y-6 */
+}

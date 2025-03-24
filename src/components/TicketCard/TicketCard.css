@@ -1,0 +1,125 @@
+.ticket-card {
+    width: 100%;
+    border-radius: 12px;
+    padding: 20px;
+    border: 2px solid #d1d5db;
+}
+
+.ticket-card-content {
+    width: 100%;
+    border-bottom: 1px solid rgba(209, 213, 219, 0.6);
+    padding-bottom: 16px;
+}
+
+.bus-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bus-details {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.bus-name {
+    font-size: 18px;
+    color: #374151;
+}
+
+.facilities {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.facility-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: rgba(229, 231, 235, 0.65);
+    padding: 4px 6px;
+    border-radius: 12px;
+}
+
+.facility-text {
+    font-size: 12px;
+    color: #4b5563;
+}
+
+.facility-text-yellow {
+    font-size: 12px;
+    color: #d97706;
+}
+
+.route-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.route-time {
+    font-size: 24px;
+    font-weight: 600;
+    color: #4b5563;
+}
+
+.route-divider {
+    flex: 1;
+    border: 1px dashed #d1d5db;
+    position: relative;
+}
+
+.route-from,
+.route-to {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4b5563;
+}
+
+.time-duration {
+    position: absolute;
+    padding: 0 12px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9fafb;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: normal;
+    border: 1px dashed #9ca3af;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.reserve-button {
+    padding: 6px 20px;
+    background-color: #3b82f6;
+    border: 2px solid #3b82f6;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reserve-button:hover {
+    background-color: transparent;
+    color: #3b82f6;
+}

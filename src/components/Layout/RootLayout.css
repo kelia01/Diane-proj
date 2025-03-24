@@ -1,0 +1,27 @@
+.root-layout {
+    width: 100%;
+    padding-left: 1rem; /* Default px-4 */
+    padding-right: 1rem;
+  }
+  
+  @media (min-width: 640px) { /* sm:px-7 */
+    .root-layout {
+      padding-left: 1.75rem;
+      padding-right: 1.75rem;
+    }
+  }
+  
+  @media (min-width: 768px) { /* md:px-16 */
+    .root-layout {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
+  
+  @media (min-width: 1024px) { /* lg:px-24 */
+    .root-layout {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+  }
+  
